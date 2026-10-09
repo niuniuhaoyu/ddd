@@ -1,0 +1,21 @@
+v 3
+d 'ddd': Triple Differences (DDD) estimators
+d
+d Implements the regression-adjustment (RA), inverse-probability-weighting (IPW),
+d and doubly-robust (DR) estimators of group-time average treatment effects
+d ATT(g,t) in triple-differences designs, following Ortiz-Villavicencio and
+d Sant'Anna (2025), arXiv:2505.09942.
+d
+d Key point: the DR DDD is a function of THREE DiD comparisons, not two;
+d common "three-way fixed effects" and "difference of two DiDs" implementations
+d are invalid when covariates matter.
+d
+d Author: Haoyu Niu
+d Distribution-Date: 20261010
+d Version: 0.3.0
+d Requires: Stata version 16
+f ddd.ado
+f _ddd_cell.ado
+f _ddd_estall.ado
+f _ddd_display.ado
+f ddd.sthlp
